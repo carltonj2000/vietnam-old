@@ -57,12 +57,12 @@ locations:
       pre: "Bk ID: 290165974"
       link: hotelHanoiPrimeGardenHotelNspa.pdf
       post: Hanoi Prime Garden Hotel & Spa
-  - at: Sapa/Tam Coc
+  - at: Tam Coc
     date: 12/4
     details:
-      pre:
+      pre: https://phungmotorbike.com
       link:
-      post: https://phungmotorbike.com
+      post:
   - at: Phong Nha
     date: 12/5
     time: 4:55P

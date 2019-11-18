@@ -6,7 +6,7 @@ import Table from "./Table";
 export default function App() {
   return (
     <Layout>
-      <Table showLinks={true} />
+      <Table showLinks={false} />
     </Layout>
   );
 }
