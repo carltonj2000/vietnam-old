@@ -6,7 +6,7 @@ import Table from "./Table";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={"/vietnam"}>
       <Switch>
         <Route exact path="/">
           <Table showLinks={false} />
