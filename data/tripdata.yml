@@ -16,37 +16,37 @@ locations:
       pre: UA1762
       link: flight-lax-pvg-sfo.pdf
       post: United
-  - at: LAX to  PVG
+  - at: LAX to PVG
     date: 11/29
-    time: 12:50PM - 11/30 6:45PM
+    time: 12:50-6:45P 11/30
     details:
       pre: UA198
       link: flight-lax-pvg-sfo.pdf
       post: to Shanghai
   - at: PVG to  SGN
     date: 11/30
-    time: 10PM - 12/1 1:10A
+    time: 10P-1:10A 12/1
     details:
       pre: MU281
       link: flight-pvg-sgn.pdf
       post: China Eastern
   - at: SGN to HAN
     date: 12/1
-    time: 5:45 - 7:55A
+    time: 5:45-7:55A
     details:
       pre: QH 202
       link: sgn-han-Ticket.pdf
       post: Bamboo Airways
   - at: Hanoi
     date: 12/1
-    time: 2PM - 12PM
+    time: 2-12P
     details:
       pre: "Bk ID: 290163246"
       link: sCentralHotelAndSpa.pdf
       post: S Central Hotel and Spa
   - at: Hạ Long Bay
     date: 12/2
-    time: 8 A
+    time: 8A
     details:
       pre: BR 749876776
       link: haLongBayCruise-BR-749876776.pdf
@@ -114,14 +114,14 @@ locations:
       post:
   - at: SGN to PVN
     date: 12/14
-    time: 2:10A-7:07A
+    time: 2:10-7:07A
     details:
       pre: MU282
       link: flight-pvg-sgn.pdf
       post: China Eastern
   - at: PVN to SFO
     date: 12/14
-    time: 1:30PM-8:30A
+    time: 1:30P-8:30A
     details:
       pre: UA858
       link: flight-lax-pvg-sfo.pdf

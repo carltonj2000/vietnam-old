@@ -9,9 +9,11 @@ import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
-import Avatar from "@material-ui/core/Avatar";
+import HomeIcon from "@material-ui/icons/Home";
 
-import flag from "./images/logo-400.jpg";
+import { Link } from "react-router-dom";
+
+import flag from "./images/Flag_of_Vietnam.svg";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -39,8 +41,12 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1
   },
-  avatar: {
+  icon: {
     width: 28,
+    color: "#da251d",
+    marginRight: "14px"
+  },
+  flag: {
     height: 28
   }
 }));
@@ -54,10 +60,15 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <HomeIcon className={classes.icon} />
+            </Link>
             <Typography variant="h6" className={classes.title}>
               Vietnam Trip
             </Typography>
-            <Avatar src={flag} alt="Vietnam flag" className={classes.avatar} />
+            <Link to="/tc">
+              <img src={flag} alt="Vietnam flag" className={classes.flag} />
+            </Link>
           </Toolbar>
         </AppBar>
       </HideOnScroll>

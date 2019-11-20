@@ -1,12 +1,20 @@
 import React from "react";
 
-import Layout from "./Layout";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Table from "./Table";
 
 export default function App() {
   return (
-    <Layout>
-      <Table showLinks={false} />
-    </Layout>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Table showLinks={false} />
+        </Route>
+        <Route path="/tc">
+          <Table showLinks={true} />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
