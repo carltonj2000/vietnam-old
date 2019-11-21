@@ -41,7 +41,7 @@ locations:
     date: 12/1
     time: 2-12P
     details:
-      pre: "Bk ID: 290163246"
+      pre: Bk ID 290163246
       link: sCentralHotelAndSpa.pdf
       post: S Central Hotel and Spa
   - at: Hạ Long Bay
@@ -54,7 +54,7 @@ locations:
   - at: Hanoi
     date: 12/3
     details:
-      pre: "Bk ID: 290165974"
+      pre: Bk ID 290165974
       link: hotelHanoiPrimeGardenHotelNspa.pdf
       post: Hanoi Prime Garden Hotel & Spa
   - at: Tam Coc
@@ -73,13 +73,13 @@ locations:
   - at: Phong Nha
     date: 12/6
     details:
-      pre: "Order # R2FCJ6J"
+      pre: Order R2FCJ6J
       link: caveTours.pdf
       post: Hang Tien
   - at: Da Nang
     date: 12/7
     details:
-      pre: "Order # RMLQM3S"
+      pre: Order RMLQM3S
       link: caveTours.pdf
       post: Tu Lan
   - at: Hoi An
