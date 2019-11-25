@@ -10,6 +10,8 @@ import Box from "@material-ui/core/Box";
 import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
 import HomeIcon from "@material-ui/icons/Home";
+import CameraIcon from "@material-ui/icons/CameraAlt";
+import ItineraryIcon from "@material-ui/icons/Assignment";
 
 import { Link } from "react-router-dom";
 
@@ -39,7 +41,8 @@ HideOnScroll.propTypes = {
 };
 const useStyles = makeStyles(theme => ({
   title: {
-    flexGrow: 1
+    flexGrow: 1,
+    color: "#ff0"
   },
   icon: {
     width: 28,
@@ -63,11 +66,17 @@ export default function HideAppBar(props) {
             <Link to="/" style={{ textDecoration: "none" }}>
               <HomeIcon className={classes.icon} />
             </Link>
+            <Link to="/photos" style={{ textDecoration: "none" }}>
+              <CameraIcon className={classes.icon} />
+            </Link>
+            <Link to="/itinerary" style={{ textDecoration: "none" }}>
+              <ItineraryIcon className={classes.icon} />
+            </Link>
             <Typography variant="h6" className={classes.title}>
               Vietnam Trip
             </Typography>
             <Link to="/tc">
-              <img src={flag} alt="Vietnam flag" className={classes.flag} />
+              <img src={flag} alt="Vietnam Flag" className={classes.flag} />
             </Link>
           </Toolbar>
         </AppBar>
