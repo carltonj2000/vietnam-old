@@ -4,34 +4,48 @@ const path = require("path");
 const md5 = require("md5");
 
 const baseDir = "./src/images";
-const ymlDir = "./";
+const ymlDir = "./data";
 
 const processDir = dir => {
   console.log("dir", dir);
-  const ymlName = dir + ".yml";
-  const yml = path.join(ymlDir, ymlName);
-  //  const doc = fs.exists(yml) ? yaml.safeLoad(fs.readFileSync(yml, "utf8")) : [];
+  const ymlNameIn = dir + "In.yml";
+  const ymlIn = path.join(ymlDir, ymlNameIn);
+  const ymlNameOut = dir + ".yml";
+  const ymlOut = path.join(ymlDir, ymlNameOut);
+  const docs = fs.existsSync(ymlIn)
+    ? yaml.safeLoad(fs.readFileSync(ymlIn, "utf8"))
+    : [];
 
   const subDir = path.join(baseDir, dir);
   const files = fs.readdirSync(subDir);
 
   const imports = [];
-  const importedAlready = new Set();
-  const exports = ["\n\nexport default {"];
+  const exports = ["\n\nexport default ["];
   files.forEach(file => {
     if (!file.match(/.(jpg|jpeg|png)$/i)) return;
     if (fs.statSync(path.join(subDir, file)).isDirectory()) return;
     const md = "md_" + md5(file);
-    if (importedAlready.has(md)) return;
-    importedAlready.add(md);
+    const matchedFiles = docs.filter(doc => doc.filename === file);
+    const matches = matchedFiles.length;
+    let keys;
+    if (matches === 0) docs.push({ filename: file });
+    else keys = Object.keys(matchedFiles[0]).filter(k => k !== "filename");
     imports.push(`import ${md} from "./images/${dir}/${file}";`);
-    exports.push(`  "${file}": ${md},`);
+    exports.push(`  {`);
+    exports.push(`    filename: "${file}",`);
+    exports.push(`    img: ${md},`);
+    if (keys) {
+      keys.map(k => {
+        const mf = matchedFiles[0][k];
+        if (typeof mf === "string") exports.push(`    ${k}: "${mf}",`);
+        else exports.push(`    ${k}: ${mf},`);
+      });
+    }
+    exports.push(`  },`);
   });
-  const out = imports.join("\n") + exports.join("\n") + "\n}\n";
+  const out = imports.join("\n") + exports.join("\n") + "\n]\n";
   fs.writeFileSync(`./src/img_${dir}.js`, out);
-  /*
-  fs.writeFileSync("./src/tripdata.json", JSON.stringify(doc, null, 2));
-  */
+  fs.writeFileSync(ymlOut, yaml.safeDump(docs));
 };
 
 try {

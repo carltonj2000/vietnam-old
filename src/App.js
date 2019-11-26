@@ -3,7 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Table from "./Table";
-import Photos from "./Photos";
+import CoverPhotos from "./CoverPhotos";
+import Hanoi from "./Hanoi";
 
 export default function App() {
   return (
@@ -19,7 +20,10 @@ export default function App() {
           <Table showLinks={true} />
         </Route>
         <Route path="/photos">
-          <Photos />
+          <CoverPhotos />
+        </Route>
+        <Route path="/Hanoi">
+          <Hanoi />
         </Route>
       </Switch>
     </Router>

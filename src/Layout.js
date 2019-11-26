@@ -12,8 +12,9 @@ import Slide from "@material-ui/core/Slide";
 import HomeIcon from "@material-ui/icons/Home";
 import CameraIcon from "@material-ui/icons/CameraAlt";
 import ItineraryIcon from "@material-ui/icons/Assignment";
+import clsx from "clsx";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import flag from "./images/Flag_of_Vietnam.svg";
 
@@ -46,8 +47,16 @@ const useStyles = makeStyles(theme => ({
   },
   icon: {
     width: 28,
-    color: "#da251d",
-    marginRight: "14px"
+    borderRadius: "5px",
+    color: "rgba(255,255, 0, 0.8)",
+    marginRight: "14px",
+    "&:hover": {
+      background: "rgba(218,37, 29, 0.5)"
+    }
+  },
+  active: {
+    color: "rgba(255,255, 0, 1)",
+    background: "rgba(218,37, 29, 1)"
   },
   flag: {
     height: 28
@@ -56,7 +65,11 @@ const useStyles = makeStyles(theme => ({
 
 export default function HideAppBar(props) {
   const classes = useStyles();
-
+  const location = useLocation();
+  const p = location.pathname;
+  const cls = pIn =>
+    console.log("p pIn", p, pIn) ||
+    (p === pIn ? clsx(classes.icon, classes.active) : clsx(classes.icon));
   return (
     <React.Fragment>
       <CssBaseline />
@@ -64,13 +77,13 @@ export default function HideAppBar(props) {
         <AppBar>
           <Toolbar>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <HomeIcon className={classes.icon} />
+              <HomeIcon className={cls("/")} />
             </Link>
             <Link to="/photos" style={{ textDecoration: "none" }}>
-              <CameraIcon className={classes.icon} />
+              <CameraIcon className={cls("/photos")} />
             </Link>
             <Link to="/itinerary" style={{ textDecoration: "none" }}>
-              <ItineraryIcon className={classes.icon} />
+              <ItineraryIcon className={cls("/itinerary")} />
             </Link>
             <Typography variant="h6" className={classes.title}>
               Vietnam Trip

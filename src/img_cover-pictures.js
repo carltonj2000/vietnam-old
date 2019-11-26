@@ -5,11 +5,36 @@ import md_bbf67bfdb4ceef615d794e9eebb9b2c8 from "./images/cover-pictures/ho-chi-
 import md_7cb6352a4d8975f5d74a5ff33e4ff8b0 from "./images/cover-pictures/one-pillar-pagoda-1440x1144.jpg";
 import md_330285e92e376fb9830e847fb79f1274 from "./images/cover-pictures/view-over-danang-beach-area-vietnam-d357a11e76e0.jpg";
 
-export default {
-  "da-nang-to-nha-trang.jpg": md_7e82d6fdb64d5e9b8cb12f6b1f6720ab,
-  "ha-long-bay.jpg.jpg": md_0d5ab6c4d811c75f26c898365ee5712d,
-  "hang-tien-cave_1024x1024.progressive.jpg": md_6d9eda48a32c1dc04196b79b8e33a503,
-  "ho-chi-minh-skyline.jpg": md_bbf67bfdb4ceef615d794e9eebb9b2c8,
-  "one-pillar-pagoda-1440x1144.jpg": md_7cb6352a4d8975f5d74a5ff33e4ff8b0,
-  "view-over-danang-beach-area-vietnam-d357a11e76e0.jpg": md_330285e92e376fb9830e847fb79f1274,
-}
+export default [
+  {
+    filename: "da-nang-to-nha-trang.jpg",
+    img: md_7e82d6fdb64d5e9b8cb12f6b1f6720ab,
+    description: "Nha Trang",
+  },
+  {
+    filename: "ha-long-bay.jpg.jpg",
+    img: md_0d5ab6c4d811c75f26c898365ee5712d,
+    description: "Halong Bay",
+  },
+  {
+    filename: "hang-tien-cave_1024x1024.progressive.jpg",
+    img: md_6d9eda48a32c1dc04196b79b8e33a503,
+    description: "Hang Tien Cave",
+  },
+  {
+    filename: "ho-chi-minh-skyline.jpg",
+    img: md_bbf67bfdb4ceef615d794e9eebb9b2c8,
+    description: "Ho Chi Minh",
+  },
+  {
+    filename: "one-pillar-pagoda-1440x1144.jpg",
+    img: md_7cb6352a4d8975f5d74a5ff33e4ff8b0,
+    description: "Hanoi",
+    active: true,
+  },
+  {
+    filename: "view-over-danang-beach-area-vietnam-d357a11e76e0.jpg",
+    img: md_330285e92e376fb9830e847fb79f1274,
+    description: "Da Nang",
+  },
+]

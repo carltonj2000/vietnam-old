@@ -66,7 +66,7 @@ function DenseTable(props) {
                         </span>
                       ) : (
                         <span>
-                          {row.details.pre} {row.details.post} {row.time}
+                          {row.details.pre} {row.details.post}
                         </span>
                       )}
                     </TableCell>
