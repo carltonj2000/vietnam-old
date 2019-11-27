@@ -68,8 +68,7 @@ export default function HideAppBar(props) {
   const location = useLocation();
   const p = location.pathname;
   const cls = pIn =>
-    console.log("p pIn", p, pIn) ||
-    (p === pIn ? clsx(classes.icon, classes.active) : clsx(classes.icon));
+    p === pIn ? clsx(classes.icon, classes.active) : clsx(classes.icon);
   return (
     <React.Fragment>
       <CssBaseline />
