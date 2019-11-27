@@ -53,7 +53,7 @@ const processDir = dir => {
   });
   const out = imports.join("\n") + exports.join("\n") + "\n]\n";
   fs.writeFileSync(`./src/img_${dir}.js`, out);
-  fs.writeFileSync(ymlOut, yaml.safeDump(docs));
+  fs.writeFileSync(ymlOut, yaml.safeDump(files));
 };
 
 try {
