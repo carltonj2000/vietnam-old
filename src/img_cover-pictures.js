@@ -9,7 +9,7 @@ export default [
   {
     filename: "one-pillar-pagoda-1440x1144.jpg",
     description: "Hanoi",
-    active: "true",
+    active: false,
     img : md_7cb6352a4d8975f5d74a5ff33e4ff8b0,
   },
   {

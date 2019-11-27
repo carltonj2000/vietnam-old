@@ -113,11 +113,6 @@ function DenseTable({ tileData }) {
   };
   const handleClose = () => openSet(false);
 
-  React.useEffect(() => {
-    tileSet(tileData[0]);
-    openSet(true);
-  }, [tileData]);
-
   return (
     <Layout>
       {!tiles ? (
@@ -126,8 +121,8 @@ function DenseTable({ tileData }) {
         </Typography>
       ) : (
         <div className={classes.root}>
-          {tileData.map((tile, idx) => (
-            //tile.active && (
+          {tileData.map((tile, idx) =>
+            tile.active && (
             <Card
               key={tile.filename}
               className={classes.card}

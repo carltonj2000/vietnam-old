@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
 
 import Layout from "./Layout";
-import tileData from "./img_cover-pictures.js";
+import tileDataIn from "./img_cover-pictures.js";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,7 +38,9 @@ const useStyles = makeStyles(theme => ({
 
 function DenseTable() {
   const classes = useStyles();
-  const tiles = tileData.filter(tile => tile.active).length;
+  const tileData = tileDataIn.filter(tile => tile.active);
+  const tiles = tileData.length;
+  console.log(tiles);
   return (
     <Layout>
       {!tiles ? (

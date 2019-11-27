@@ -47,7 +47,11 @@ const processDir = dir => {
     const md = "md_" + md5(file.filename);
     imports.push(`import ${md} from "./images/${dir}/${file.filename}";`);
     exports.push(`  {`);
-    Object.keys(file).map(k => exports.push(`    ${k}: "${file[k]}",`));
+    Object.keys(file).map(k =>
+      k === "active"
+        ? exports.push(`    ${k}: ${file[k]},`)
+        : exports.push(`    ${k}: "${file[k]}",`)
+    );
     exports.push(`    img : ${md},`);
     exports.push(`  },`);
   });
