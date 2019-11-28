@@ -17,10 +17,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "rsync -a ./build/ carltonj2000@carltonjoseph.com:/mnt/volume_sfo2_02/cj/carltonwin8/vietnam/",
+    "deploy": "rsync -a ./build/ carltonj2000@carltonjoseph.com:/mnt/volume_sfo2_02/cj/tinaandcarlton/vietnam/",
+    "deploy:old": "rsync -a ./build/ carltonj2000@carltonjoseph.com:/mnt/volume_sfo2_02/cj/carltonwin8/vietnam/",
     "genres": "node scripts/genResources.js",
     "genimg": "node scripts/genImages.js",
-    "release": "yarn genres && yarn genimg && yarn build && yarn deploy"
+    "release": "yarn genres && yarn genimg && yarn build && yarn deploy",
+    "release:old": "yarn genres && yarn genimg && yarn build && yarn deploy:old"
   },
   "eslintConfig": {
     "extends": "react-app"
