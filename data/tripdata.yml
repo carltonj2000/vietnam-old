@@ -35,7 +35,7 @@ locations:
     time: 5:45-7:55A
     details:
       pre: QH 202
-      link: sgn-han-Ticket.pdf
+      link: sgn-han-new.pdf
       post: Bamboo Airways
   - at: Hanoi
     date: 12/1
@@ -74,13 +74,13 @@ locations:
     date: 12/6
     details:
       pre: Order R2FCJ6J
-      link: caveTours.pdf
+      link: OxalisAdventure.pdf
       post: Hang Tien
   - at: Da Nang
     date: 12/7
     details:
-      pre: Order RMLQM3S
-      link: caveTours.pdf
+      pre: Order R2FCJ6J
+      link: OxalisAdventure.pdf
       post: Tu Lan
   - at: Hoi An
     date:
