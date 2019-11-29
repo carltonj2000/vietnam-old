@@ -75,15 +75,15 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <HomeIcon className={cls("/")} />
-            </Link>
             <Link to="/photos" style={{ textDecoration: "none" }}>
               <CameraIcon className={cls("/photos")} />
             </Link>
             <Link to="/itinerary" style={{ textDecoration: "none" }}>
               <ItineraryIcon className={cls("/itinerary")} />
             </Link>
+            <a href="/main" style={{ textDecoration: "none" }}>
+              <HomeIcon className={cls("/main")} />
+            </a>
             <Typography variant="h6" className={classes.title}>
               Vietnam Trip
             </Typography>
