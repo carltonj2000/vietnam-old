@@ -1,0 +1,52 @@
+[
+  {
+    "location": "Hanoi",
+    "attractions": [
+      "Hoàn Kiếm Lake",
+      "Ho Chi Minh Mausoleum",
+      "One Pillar Pagoda",
+      "Temple of Literature",
+      "Ngoc Son Temple",
+      "Ninh Bin & Tam Coc"
+    ]
+  },
+  {
+    "location": "Hue",
+    "attractions": [
+      "Tomb of Tu Duc",
+      "Tomb of Khai Dinh",
+      "Thien Mu Pagoda",
+      "Perfume River",
+      "Imperial Citadel",
+      "Alba Thanh Tan Hot Springs"
+    ]
+  },
+  {
+    "location": "Da Nang",
+    "attractions": [
+      "Golden Bridge",
+      "Ba Ha Hills Cable Car",
+      "Hoi An"
+    ]
+  },
+  {
+    "location": "Ho Chi Minh",
+    "attractions": [
+      "Breeze Sky Bar at Hotel Majestic Saigon",
+      "Mekong Delta",
+      "Cu Chi Tunnels",
+      "Vinh Trang Pagoda",
+      "Elisa Floating Restaurant - night",
+      "Binh Tay Market",
+      "Thien Hau Temple",
+      "Saigon Sky Deck - 50th floor cafe",
+      "War Remnants Museum",
+      "Zoo and Botanical Gardens",
+      "Turtle Lake at Night",
+      "Ben Thanh Market",
+      "Phu My Hung, Starlight Bridge Night",
+      "Rooftop bar",
+      "Jade Emperor Pagoda"
+    ]
+  }
+]

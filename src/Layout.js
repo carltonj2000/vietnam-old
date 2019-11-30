@@ -41,9 +41,17 @@ HideOnScroll.propTypes = {
   window: PropTypes.func
 };
 const useStyles = makeStyles(theme => ({
-  title: {
+  home: {
     flexGrow: 1,
-    color: "#ff0"
+    marginLeft: "8px"
+  },
+  title: {
+    borderRadius: "5px",
+    color: "#ff0",
+    padding: "0 4px",
+    "&:hover": {
+      background: "rgba(218,37, 29, 0.5)"
+    }
   },
   icon: {
     width: 28,
@@ -75,18 +83,24 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar>
           <Toolbar>
-            <Link to="/photos" style={{ textDecoration: "none" }}>
-              <CameraIcon className={cls("/photos")} />
-            </Link>
             <Link to="/itinerary" style={{ textDecoration: "none" }}>
               <ItineraryIcon className={cls("/itinerary")} />
             </Link>
-            <a href="/main" style={{ textDecoration: "none" }}>
+            <Link to="/photos" style={{ textDecoration: "none" }}>
+              <CameraIcon className={cls("/photos")} />
+            </Link>
+            <Link to="/activities" style={{ textDecoration: "none" }}>
+              <Typography variant="h6" className={classes.title}>
+                Vietnam Trip
+              </Typography>
+            </Link>
+            <a
+              href="/main"
+              className={classes.home}
+              style={{ textDecoration: "none" }}
+            >
               <HomeIcon className={cls("/main")} />
             </a>
-            <Typography variant="h6" className={classes.title}>
-              Vietnam Trip
-            </Typography>
             <Link to="/tc">
               <img src={flag} alt="Vietnam Flag" className={classes.flag} />
             </Link>
