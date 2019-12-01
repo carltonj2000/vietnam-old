@@ -3,10 +3,8 @@ import md_0ae204098a2ef17a3ae6b3bc32f79a00 from "./images/hanoi-day1/IMG_6357.JP
 import md_eca9974cc080eb43591052f48309fcd3 from "./images/hanoi-day1/IMG_6363.JPG";
 import md_bc989c5e329a895778dbd5c470dde361 from "./images/hanoi-day1/IMG_6364.JPG";
 import md_3f0ee83fb1aef0c7d9d389f1bbd95d9b from "./images/hanoi-day1/IMG_6372.JPG";
-import md_54e82099fac8f914cb982fec4c4bf45d from "./images/hanoi-day1/IMG_6377.JPG";
 import md_d5228ace0ba1d929d4704fad30161d25 from "./images/hanoi-day1/IMG_6386.JPG";
 import md_9ddd22d9deb0601042ba456f347d8a88 from "./images/hanoi-day1/IMG_6387.JPG";
-import md_02a87c6b4a51da897a045ca39aee7560 from "./images/hanoi-day1/IMG_6391.JPG";
 import md_cce4a00c59c6bce786de8ccc46d29d8b from "./images/hanoi-day1/IMG_6403.JPG";
 import md_479e66971dce8e0c64dde63324f025ba from "./images/hanoi-day1/IMG_6410.JPG";
 import md_c6c8488341c7107f3131806b7432f599 from "./images/hanoi-day1/IMG_8042.JPG";
@@ -27,6 +25,13 @@ import md_9461f48d31b206cee3a0f8333f5c163f from "./images/hanoi-day1/IMG_8109.JP
 import md_e0bbcc427a05e8e0fb0cfea303e8faa0 from "./images/hanoi-day1/IMG_8114.JPG";
 import md_5526f36bd9c01bc6e80d1c60e3e9d45c from "./images/hanoi-day1/IMG_8115.JPG";
 import md_c0d26d5716643962de2f450ffd9064cd from "./images/hanoi-day1/IMG_8118.JPG";
+import md_cd7882a219dac38061fef711d8a63f84 from "./images/hanoi-day1/IMG_8124.JPG";
+import md_0e9736683bd661f2601b31ebf2bf5f5e from "./images/hanoi-day1/IMG_8134.JPG";
+import md_e072db4b437b02e616727270c6623a8b from "./images/hanoi-day1/IMG_8141.JPG";
+import md_f49a7c3fccb0fd2d1aead4a9d8bab08b from "./images/hanoi-day1/IMG_8146.JPG";
+import md_98b5e1578aa2d00020a14eae2ed4759a from "./images/hanoi-day1/IMG_8148.JPG";
+import md_0f04947b431f583e720180b09910d9b6 from "./images/hanoi-day1/IMG_8149.JPG";
+import md_19bc5568a8747d0c8ccd495fb3831305 from "./images/hanoi-day1/IMG_8152.JPG";
 
 export default [
   {
@@ -50,20 +55,12 @@ export default [
     img : md_3f0ee83fb1aef0c7d9d389f1bbd95d9b,
   },
   {
-    filename: "IMG_6377.JPG",
-    img : md_54e82099fac8f914cb982fec4c4bf45d,
-  },
-  {
     filename: "IMG_6386.JPG",
     img : md_d5228ace0ba1d929d4704fad30161d25,
   },
   {
     filename: "IMG_6387.JPG",
     img : md_9ddd22d9deb0601042ba456f347d8a88,
-  },
-  {
-    filename: "IMG_6391.JPG",
-    img : md_02a87c6b4a51da897a045ca39aee7560,
   },
   {
     filename: "IMG_6403.JPG",
@@ -144,5 +141,33 @@ export default [
   {
     filename: "IMG_8118.JPG",
     img : md_c0d26d5716643962de2f450ffd9064cd,
+  },
+  {
+    filename: "IMG_8124.JPG",
+    img : md_cd7882a219dac38061fef711d8a63f84,
+  },
+  {
+    filename: "IMG_8134.JPG",
+    img : md_0e9736683bd661f2601b31ebf2bf5f5e,
+  },
+  {
+    filename: "IMG_8141.JPG",
+    img : md_e072db4b437b02e616727270c6623a8b,
+  },
+  {
+    filename: "IMG_8146.JPG",
+    img : md_f49a7c3fccb0fd2d1aead4a9d8bab08b,
+  },
+  {
+    filename: "IMG_8148.JPG",
+    img : md_98b5e1578aa2d00020a14eae2ed4759a,
+  },
+  {
+    filename: "IMG_8149.JPG",
+    img : md_0f04947b431f583e720180b09910d9b6,
+  },
+  {
+    filename: "IMG_8152.JPG",
+    img : md_19bc5568a8747d0c8ccd495fb3831305,
   },
 ]
