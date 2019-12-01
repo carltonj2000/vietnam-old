@@ -121,8 +121,7 @@ function DenseTable({ tileData }) {
         </Typography>
       ) : (
         <div className={classes.root}>
-          {tileData.map((tile, idx) =>
-            tile.active && (
+          {tileData.map((tile, idx) => (
             <Card
               key={tile.filename}
               className={classes.card}

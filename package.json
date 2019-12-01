@@ -22,6 +22,7 @@
     "genres": "node scripts/genResources.js",
     "genimg": "node scripts/genImages.js",
     "genact": "node scripts/genActivities.js",
+    "gen": "yarn genres && yarn genimg && yarn genact",
     "release": "yarn genres && yarn genimg && yarn build && yarn deploy",
     "release:old": "yarn genres && yarn genimg && yarn build && yarn deploy:old"
   },

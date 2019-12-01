@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Link } from "react-router-dom";
 
 import Layout from "./Layout";
-import tileDataIn from "./img_cover-pictures.js";
+import tileData from "./img_cover-pictures-man.js";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,7 +38,6 @@ const useStyles = makeStyles(theme => ({
 
 function DenseTable() {
   const classes = useStyles();
-  const tileData = tileDataIn.filter(tile => tile.active);
   const tiles = tileData.length;
   console.log(tiles);
   return (
@@ -50,13 +49,12 @@ function DenseTable() {
       ) : (
         <div className={classes.root}>
           {tileData.map(tile => (
-            //tile.active && (
-            <Link key={tile.filename} to={tile.description.replace(" ", "")}>
+            <Link key={tile.route} to={tile.route}>
               <Card className={classes.card}>
                 <CardActionArea>
                   <CardMedia
                     className={classes.img}
-                    alt={tile.description || tile.filename}
+                    alt={tile.description}
                     image={tile.img}
                   />
                 </CardActionArea>
