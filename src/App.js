@@ -7,6 +7,7 @@ import Photos from "./Photos";
 import PhotosMain from "./PhotosMain";
 import PicsHanoiDay1 from "./img_hanoi-day1";
 import PicsSaigonArrival from "./img_saigon-arrival";
+import PicsHaLongBay1 from "./img_halongbay1";
 import Activities from "./Activities";
 
 export default function App() {
@@ -14,7 +15,10 @@ export default function App() {
     <Router basename={"/vietnam"}>
       <Switch>
         <Route exact path="/">
-          <Table showLinks={false} />
+          <PhotosMain />
+        </Route>
+        <Route path="/halongbay1">
+          <Photos tileData={PicsHaLongBay1} />
         </Route>
         <Route path="/itinerary">
           <Table showLinks={false} />
